@@ -2,24 +2,55 @@
 @import "../../lib/base/_base.scss";
 
 .header {
+  @extend .clearfix;
   background: #191919;
-  height: 140px;
-  padding: 2.5em;
+  height: 100%;
+
+  @include media($medium-screen-up) {
+    height: 140px;
+    padding: 2.5em;
+  }
 }
 
 .header-logo {
-  float: left;
-  width: 20%;
+  @include span-columns(8 of 10);
+  @include shift(1);
+
+  @include media($medium-screen-up) {
+    float: left;
+    width: 20%;
+  }
 }
 
 .cadibode-logo{
-  height: 60px;
+  @include span-columns(9 of 10);
+  @include shift(0.5);
+  //height: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  @include media($medium-screen-up) {
+    float: left;
+    width: 20%;
+  }
 }
 
 .social-media {
-  float: right;
+  @include span-columns(9 of 10);
+  @include shift(0.5);
+
+  @include media($medium-screen-up) {
+    float: right;
+  }
 }
 
 .social-media-icons {
-  display: inline-block;
+  display: block;
+  @include span-columns(2 of 10);
+}
+
+.social-media-icons--yt {
+  @extend .social-media-icons;
+  min-width: 80px;
+  margin-top: 0.20em;
 }

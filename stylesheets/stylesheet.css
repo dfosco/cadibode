@@ -242,8 +242,9 @@ input[type="submit"] {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .release:before, .footer:before,
+.clearfix:before, .header:before, .release:before, .footer:before,
 .clearfix:after,
+.header:after,
 .release:after,
 .footer:after {
   content: " ";
@@ -251,14 +252,14 @@ input[type="submit"] {
   display: table;
   /* 2 */ }
 
-.clearfix:after, .release:after, .footer:after {
+.clearfix:after, .header:after, .release:after, .footer:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, .release, .footer {
+.clearfix, .header, .release, .footer {
   *zoom: 1; }
 
 /* Bitters 0.10.0
@@ -491,21 +492,64 @@ input[type="submit"] {
 
 .header {
   background: #191919;
-  height: 140px;
-  padding: 2.5em; }
+  height: 100%; }
+  @media screen and (min-width: 40em) {
+    .header {
+      height: 140px;
+      padding: 2.5em; } }
 
 .header-logo {
   float: left;
-  width: 20%; }
+  display: block;
+  margin-right: 2.84259%;
+  width: 79.43148%;
+  margin-left: 10.28426%; }
+  .header-logo:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .header-logo {
+      float: left;
+      width: 20%; } }
 
 .cadibode-logo {
-  height: 60px; }
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 89.71574%;
+  margin-left: 5.14213%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .cadibode-logo:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .cadibode-logo {
+      float: left;
+      width: 20%; } }
 
 .social-media {
-  float: right; }
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 89.71574%;
+  margin-left: 5.14213%; }
+  .social-media:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .social-media {
+      float: right; } }
 
-.social-media-icons {
-  display: inline-block; }
+.social-media-icons, .social-media-icons--yt {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 17.72593%; }
+  .social-media-icons:last-child, .social-media-icons--yt:last-child {
+    margin-right: 0; }
+
+.social-media-icons--yt {
+  min-width: 80px;
+  margin-top: 0.20em; }
 
 /* Bitters 0.10.0
  * http://bitters.bourbon.io
@@ -738,14 +782,25 @@ input[type="submit"] {
 .main {
   background: url("../images/FUNDOLAND.jpg") no-repeat top left;
   background-position: 0px -250px;
-  padding: 1.5em 2.5em;
-  height: 500px; }
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 375px; }
+  @media screen and (min-width: 40em) {
+    .main {
+      height: 500px; } }
 
 .show-schedule {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
-  margin-top: 1em;
-  padding: 2em; }
+  padding: 2em;
+  margin-top: 2em;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 89.71574%;
+  margin-left: 5.14213%; }
+  .show-schedule:last-child {
+    margin-right: 0; }
   @media screen and (min-width: 40em) {
     .show-schedule {
       float: left;
@@ -1014,8 +1069,10 @@ input[type="submit"] {
   margin-right: 2.84259%;
   width: 89.71574%;
   margin-left: 5.14213%;
-  margin-top: 10em;
+  margin-top: 6em;
   margin-bottom: 2em; }
+  .release-box:last-child {
+    margin-right: 0; }
   @media screen and (min-width: 40em) {
     .release-box {
       float: left;
@@ -1027,8 +1084,6 @@ input[type="submit"] {
       margin-bottom: 6em; }
       .release-box:last-child {
         margin-right: 0; } }
-  .release-box:last-child {
-    margin-right: 0; }
 
 .release-copy {
   color: #FFF;
@@ -1271,8 +1326,9 @@ input[type="submit"] {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .release:before, .footer:before,
+.clearfix:before, .header:before, .release:before, .footer:before,
 .clearfix:after,
+.header:after,
 .release:after,
 .footer:after {
   content: " ";
@@ -1280,14 +1336,14 @@ input[type="submit"] {
   display: table;
   /* 2 */ }
 
-.clearfix:after, .release:after, .footer:after {
+.clearfix:after, .header:after, .release:after, .footer:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, .release, .footer {
+.clearfix, .header, .release, .footer {
   *zoom: 1; }
 
 .footer {
@@ -1303,31 +1359,55 @@ input[type="submit"] {
     margin-right: 0; }
 
 .footer-content {
-  height: 100%;
-  float: right;
-  margin: 1.5em 0em; }
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 89.71574%;
+  margin-left: 5.14213%; }
+  .footer-content:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .footer-content {
+      height: 100%;
+      float: right;
+      margin: 1.5em 0em; } }
 
 .texto-contato {
-  float: left;
-  height: 100%;
-  margin-top: 0.5em;
-  margin-right: 2em;
-  text-align: right; }
+  width: 100%;
+  font-size: 1.4em;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .texto-contato {
+      float: left;
+      height: 100%;
+      text-align: right; } }
 
 .link-contato, .telefone-contato {
   color: #FFF;
   display: block;
-  font-weight: 500; }
+  font-weight: 900; }
   .link-contato:hover, .link-contato:active, .link-contato:focus, .telefone-contato:hover, .telefone-contato:active, .telefone-contato:focus {
     color: #FFF;
     text-decoration: underline; }
 
 .logo-wrapper {
-  height: 100%;
-  float: right; }
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 89.71574%;
+  margin-left: 5.14213%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .logo-wrapper:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .logo-wrapper {
+      height: 100%;
+      float: right; } }
 
-.footer-logo {
-  height: 60px; }
+@media screen and (min-width: 40em) {
+  .footer-logo {
+    height: 60px; } }
 
 body {
   margin: 0px;
