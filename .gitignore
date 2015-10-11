@@ -1,3 +1,4 @@
 config.codekit
 bower.json
 src/styles/.sass-cache
+src/styles/modules/.sass-cache
