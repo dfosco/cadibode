@@ -17,8 +17,8 @@
 
   @include media($medium-screen-up) {
     height: 100%;
-    float: right;
-    margin: 1.5em 0em;
+    //float: right;
+    margin: 1.5em 2.5em;
   }
 }
 
@@ -29,7 +29,7 @@
 
   @include media($medium-screen-up) {
     float: left;
-    height: 100%;
+    width: 85%;
     text-align: right;
   }
 }
@@ -51,6 +51,7 @@
   @include media($medium-screen-up) {
     height: 100%;
     float: right;
+    width: 12%;
   }
 }
 

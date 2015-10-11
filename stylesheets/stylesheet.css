@@ -1354,7 +1354,7 @@ input[type="submit"] {
   background: #191919;
   color: #FFF;
   height: 100%;
-  padding: 1em 2.5em; }
+  padding: 2em 0em; }
   .footer:last-child {
     margin-right: 0; }
 
@@ -1369,8 +1369,7 @@ input[type="submit"] {
   @media screen and (min-width: 40em) {
     .footer-content {
       height: 100%;
-      float: right;
-      margin: 1.5em 0em; } }
+      margin: 1.5em 2.5em; } }
 
 .texto-contato {
   width: 100%;
@@ -1379,7 +1378,7 @@ input[type="submit"] {
   @media screen and (min-width: 40em) {
     .texto-contato {
       float: left;
-      height: 100%;
+      width: 85%;
       text-align: right; } }
 
 .link-contato, .telefone-contato {
@@ -1394,16 +1393,14 @@ input[type="submit"] {
   float: left;
   display: block;
   margin-right: 2.84259%;
-  width: 89.71574%;
-  margin-left: 5.14213%;
-  margin-top: 1em;
-  margin-bottom: 1em; }
+  width: 100%; }
   .logo-wrapper:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40em) {
     .logo-wrapper {
       height: 100%;
-      float: right; } }
+      float: right;
+      width: 12%; } }
 
 @media screen and (min-width: 40em) {
   .footer-logo {
