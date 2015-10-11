@@ -495,8 +495,17 @@ input[type="submit"] {
   height: 100%; }
   @media screen and (min-width: 40em) {
     .header {
-      height: 140px;
-      padding: 2.5em; } }
+      height: 140px; } }
+
+@media screen and (min-width: 40em) {
+  .header-inner {
+    float: left;
+    display: block;
+    margin-right: 1.75788%;
+    width: 87.28027%;
+    margin-left: 6.35987%; }
+    .header-inner:last-child {
+      margin-right: 0; } }
 
 .header-logo {
   float: left;
@@ -509,7 +518,12 @@ input[type="submit"] {
   @media screen and (min-width: 40em) {
     .header-logo {
       float: left;
-      width: 20%; } }
+      display: block;
+      margin-right: 1.75788%;
+      width: 36.40133%;
+      margin-left: 0%; }
+      .header-logo:last-child {
+        margin-right: 0; } }
 
 .cadibode-logo {
   float: left;
@@ -524,19 +538,33 @@ input[type="submit"] {
   @media screen and (min-width: 40em) {
     .cadibode-logo {
       float: left;
-      width: 20%; } }
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%;
+      margin-left: 0%; }
+      .cadibode-logo:last-child {
+        margin-right: 0; } }
 
 .social-media {
   float: left;
   display: block;
   margin-right: 2.84259%;
-  width: 89.71574%;
-  margin-left: 5.14213%; }
+  width: 74.28935%;
+  margin-left: 12.85532%;
+  margin-bottom: 1em; }
   .social-media:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40em) {
     .social-media {
-      float: right; } }
+      float: left;
+      display: block;
+      margin-right: 1.75788%;
+      width: 26.86153%;
+      margin-left: 0%;
+      padding-top: 3em;
+      float: right; }
+      .social-media:last-child {
+        margin-right: 0; } }
 
 .social-media-icons, .social-media-icons--yt {
   display: block;
@@ -546,6 +574,9 @@ input[type="submit"] {
   width: 17.72593%; }
   .social-media-icons:last-child, .social-media-icons--yt:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .social-media-icons, .social-media-icons--yt {
+      display: inline-block; } }
 
 .social-media-icons--yt {
   min-width: 80px;
@@ -789,6 +820,16 @@ input[type="submit"] {
     .main {
       height: 500px; } }
 
+@media screen and (min-width: 40em) {
+  .main-inner {
+    float: left;
+    display: block;
+    margin-right: 1.75788%;
+    width: 87.28027%;
+    margin-left: 6.35987%; }
+    .main-inner:last-child {
+      margin-right: 0; } }
+
 .show-schedule {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
@@ -797,16 +838,17 @@ input[type="submit"] {
   float: left;
   display: block;
   margin-right: 2.84259%;
-  width: 89.71574%;
-  margin-left: 5.14213%; }
+  width: 69.14722%;
+  margin-left: 15.42639%; }
   .show-schedule:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40em) {
     .show-schedule {
       float: left;
       display: block;
-      margin-right: 1.75788%;
-      width: 23.68159%; }
+      margin-right: 2.01406%;
+      width: 27.13281%;
+      margin-left: 0%; }
       .show-schedule:last-child {
         margin-right: 0; } }
 
@@ -1349,7 +1391,7 @@ input[type="submit"] {
 .footer {
   float: left;
   display: block;
-  margin-right: 1.75788%;
+  margin-right: 2.84259%;
   width: 100%;
   background: #191919;
   color: #FFF;
@@ -1357,29 +1399,49 @@ input[type="submit"] {
   padding: 2em 0em; }
   .footer:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .footer {
+      float: left;
+      display: block;
+      margin-right: 1.75788%;
+      width: 100%; }
+      .footer:last-child {
+        margin-right: 0; } }
 
 .footer-content {
   float: left;
   display: block;
   margin-right: 2.84259%;
-  width: 89.71574%;
-  margin-left: 5.14213%; }
+  width: 69.14722%;
+  margin-left: 15.42639%; }
   .footer-content:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40em) {
     .footer-content {
-      height: 100%;
-      margin: 1.5em 2.5em; } }
+      float: left;
+      display: block;
+      margin-right: 1.75788%;
+      width: 87.28027%;
+      margin-left: 6.35987%; }
+      .footer-content:last-child {
+        margin-right: 0; } }
 
 .texto-contato {
   width: 100%;
   font-size: 1.4em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.5em; }
   @media screen and (min-width: 40em) {
     .texto-contato {
       float: left;
-      width: 85%;
-      text-align: right; } }
+      display: block;
+      margin-right: 2.01406%;
+      width: 70.85313%;
+      margin-left: 14.57344%;
+      float: left;
+      text-align: right; }
+      .texto-contato:last-child {
+        margin-right: 0; } }
 
 .link-contato, .telefone-contato {
   color: #FFF;
@@ -1393,18 +1455,25 @@ input[type="submit"] {
   float: left;
   display: block;
   margin-right: 2.84259%;
-  width: 100%; }
+  width: 69.14722%;
+  margin-left: 15.42639%; }
   .logo-wrapper:last-child {
     margin-right: 0; }
   @media screen and (min-width: 40em) {
     .logo-wrapper {
-      height: 100%;
-      float: right;
-      width: 12%; } }
+      float: left;
+      display: block;
+      margin-right: 2.01406%;
+      width: 12.55938%;
+      margin-left: 0%;
+      height: 100%; }
+      .logo-wrapper:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 40em) {
   .footer-logo {
-    height: 60px; } }
+    height: 60px;
+    float: right; } }
 
 body {
   margin: 0px;

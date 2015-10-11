@@ -13,16 +13,24 @@
   }
 }
 
+.main-inner {
+  @include media($medium-screen-up) {
+    @include span-columns(14 of 16);
+    @include shift(1);
+  }
+}
+
 .show-schedule {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
   padding: 2em;
   margin-top: 2em;
-  @include span-columns(9 of 10);
-  @include shift(0.5);
+  @include span-columns(7 of 10);
+  @include shift(1.5);
 
   @include media($medium-screen-up) {
-    @include span-columns(4 of 16);
+    @include span-columns(4 of 14);
+    @include shift(0);
   }
 
 }
