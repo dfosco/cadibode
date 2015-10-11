@@ -815,10 +815,10 @@ input[type="submit"] {
   background-position: 0px -250px;
   background-size: cover;
   background-repeat: repeat-y;
-  height: 375px; }
+  height: 300px; }
   @media screen and (min-width: 40em) {
     .main {
-      height: 500px; } }
+      height: 750px; } }
 
 @media screen and (min-width: 40em) {
   .main-inner {
@@ -830,43 +830,29 @@ input[type="submit"] {
     .main-inner:last-child {
       margin-right: 0; } }
 
-.show-schedule {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 3px;
-  padding: 2em;
-  margin-top: 2em;
+.cadi-video {
   float: left;
   display: block;
-  margin-right: 2.84259%;
-  width: 69.14722%;
-  margin-left: 15.42639%; }
-  .show-schedule:last-child {
+  margin-right: 2.01406%;
+  width: 92.71328%;
+  margin-left: 3.64336%; }
+  .cadi-video:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 40em) {
-    .show-schedule {
-      float: left;
-      display: block;
-      margin-right: 2.01406%;
-      width: 27.13281%;
-      margin-left: 0%; }
-      .show-schedule:last-child {
-        margin-right: 0; } }
 
-.schedule-title {
-  color: #FFF;
-  font-family: 'Titillium Web', sans-serif;
-  margin-bottom: 0.5em; }
+.embed-container {
+  margin-top: 2em;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
 
-.concert-list {
-  color: #FFF;
-  margin-left: 0.25em; }
-
-.concert-item {
-  text-transform: uppercase; }
-
-.concert-date {
-  font-weight: 900;
-  margin-right: 0.5em; }
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* Bitters 0.10.0
  * http://bitters.bourbon.io

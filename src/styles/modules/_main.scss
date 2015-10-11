@@ -6,10 +6,10 @@
   background-position: 0px -250px;
   background-size: cover;
   background-repeat: repeat-y;
-  height: 375px;
+  height: 300px;
 
   @include media($medium-screen-up) {
-    height: 500px;
+    height: 750px;
   }
 }
 
@@ -20,37 +20,24 @@
   }
 }
 
-.show-schedule {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 3px;
-  padding: 2em;
+.cadi-video {
+  @include span-columns(13 of 14);
+  @include shift(0.5);
+}
+
+.embed-container {
   margin-top: 2em;
-  @include span-columns(7 of 10);
-  @include shift(1.5);
-
-  @include media($medium-screen-up) {
-    @include span-columns(4 of 14);
-    @include shift(0);
-  }
-
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.schedule-title {
-  color: #FFF;
-  font-family: 'Titillium Web', sans-serif;
-  margin-bottom: 0.5em;
-}
-
-.concert-list {
-  color: #FFF;
-  margin-left: 0.25em;
-}
-
-.concert-item {
-  text-transform: uppercase;
-}
-
-.concert-date {
-  font-weight: 900;
-  margin-right: 0.5em;
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
