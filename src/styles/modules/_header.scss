@@ -1,0 +1,25 @@
+//@import "../lib/base/normalize-css/normalize.css";
+@import "../../lib/base/_base.scss";
+
+.header {
+  background: #191919;
+  height: 140px;
+  padding: 2.5em;
+}
+
+.header-logo {
+  float: left;
+  width: 20%;
+}
+
+.cadibode-logo{
+  height: 60px;
+}
+
+.social-media {
+  float: right;
+}
+
+.social-media-icons {
+  display: inline-block;
+}

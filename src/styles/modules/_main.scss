@@ -1,0 +1,40 @@
+//@import "../lib/base/normalize-css/normalize.css";
+@import "../../lib/base/_base.scss";
+
+.main {
+  background: url("#{$img-url}/FUNDOLAND.jpg") no-repeat top left;
+  background-position: 0px -250px;
+  padding: 1.5em 2.5em;
+  height: 500px;
+}
+
+.show-schedule {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  margin-top: 1em;
+  padding: 2em;
+
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 16);
+  }
+}
+
+.schedule-title {
+  color: #FFF;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.concert-list {
+  color: #FFF;
+  margin-left: 0.25em;
+}
+
+.concert-item {  
+  text-transform: uppercase;
+}
+
+.concert-date {
+  font-weight: 900;
+  margin-right: 0.5em;
+}

@@ -1,0 +1,33 @@
+//@import "../lib/base/normalize-css/normalize.css";
+@import "../../lib/base/_base.scss";
+
+.release {
+  @extend .clearfix;
+  background-image: url("#{$img-url}/FUNDORELEASE.jpg");
+  background-size: cover;
+  height: 100%;
+  margin-top: -1em;
+}
+
+.release-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  border-radius: 3px;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10 of 16);
+    @include shift(3);
+    margin-top: 10em;
+    margin-bottom: 6em;
+  }
+
+  @include span-columns(9 of 10);
+  @include shift(0.5);
+  margin-top: 10em;
+  margin-bottom: 2em;
+}
+
+.release-copy {
+  color: #FFF;
+  font-weight: 500;
+}

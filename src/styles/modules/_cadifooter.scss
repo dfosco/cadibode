@@ -1,0 +1,46 @@
+//@import "../lib/base/normalize-css/normalize.css";
+@import "../../lib/base/_base.scss";
+@import "../utils/clearfix";
+
+.footer {
+  @extend .clearfix;
+  @include span-columns(16 of 16);
+  background: #191919;
+  color: #FFF;
+  height: 100%;
+  padding: 1em 2.5em;
+}
+
+.footer-content {
+  height: 100%;
+  float: right;
+  margin: 1.5em 0em;
+}
+
+.texto-contato {
+  float: left;
+  height: 100%;
+  margin-top: 0.5em;
+  margin-right: 2em;
+  text-align: right;
+}
+
+.link-contato, .telefone-contato {
+  color: #FFF;
+  display: block;
+  font-weight: 500;
+
+  &:hover, &:active, &:focus {
+    color: #FFF;
+    text-decoration: underline;
+  }
+}
+
+.logo-wrapper {
+  height: 100%;
+  float: right;
+}
+
+.footer-logo {
+  height: 60px;
+}
